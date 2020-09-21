@@ -1,4 +1,4 @@
-# eslint-plugin-eda
+# eslint-config-eda
 
 Linting configuration for Enspiral Dev Academy  (EDA) challenges and projects
 
@@ -10,29 +10,19 @@ You'll first need to install [ESLint](http://eslint.org) and [`babel-eslint`](ht
 $ npm i -D eslint babel-eslint
 ```
 
-Next, install `eslint-plugin-eda` and dependencies:
+Next, install `eslint-config-eda` and dependencies:
 
 ```
-$ npm i -D eslint-plugin-eda
+$ npm i -D eslint-config-eda
 ```
 
 
 ## Usage
 
-Add `eda` to the plugins section of your `.eslintrc` configuration file (you can omit the `eslint-plugin-` prefix) and then configure it under the `extends` section. This is what your `.eslintrc.json` should look like after adding `parser` and `settings` sections:
+Add `eda` to the `extends` section of your `.eslintrc` configuration file (you can omit the `eslint-config-` prefix). This is what your `.eslintrc.json` should look like:
 
 ```json
 {
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaFeatures": {"jsx": true}
-  },
-  "settings": {
-    "react": {"version": "detect"},
-    "import/resolver": {"node": {"extensions": [".js",".jsx"]}}
-  },
-  "plugins": ["eda"],
-  "extends": {"eda/recommended"}
+  "extends": "eda"
 }
 ```
