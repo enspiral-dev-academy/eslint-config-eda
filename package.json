@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-eda",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Linting configuration for EDA challenges and projects",
   "author": "Ensprial Dev Academy (EDA)",
   "license": "ISC",
