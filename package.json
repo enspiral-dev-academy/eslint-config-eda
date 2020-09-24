@@ -9,6 +9,9 @@
     "eslintconfig",
     "eslint-config"
   ],
+  "scripts": {
+    "precommit": "./make-readme"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/enspiral-dev-academy/eslint-config-eda.git"
