@@ -9,9 +9,12 @@
     "eslintconfig",
     "eslint-config"
   ],
+  "scripts": {
+    "make": "./make-readme"
+  },
   "husky": {
     "hooks": {
-      "pre-commit": "./make-readme"
+      "pre-commit": "npm run make"
     }
   },
   "repository": {
