@@ -10,7 +10,7 @@
     "eslint-config"
   ],
   "scripts": {
-    "make": "./make-readme"
+    "make": "./make-readme && git add ."
   },
   "husky": {
     "hooks": {
