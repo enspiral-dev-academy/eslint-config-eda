@@ -1,6 +1,6 @@
 # eslint-config-eda
 
-Linting configuration for Enspiral Dev Academy (EDA) challenges and projects. This is the x version that isn't pretty ... please
+Linting configuration for Enspiral Dev Academy (EDA) challenges and projects. This is the x version that isn't pretty ... you're welcome
 
 ## Installation
 
