@@ -12,7 +12,7 @@ const configVersion = packageJson.version
 const readmePath = path.join(__dirname, 'README.md')
 const contents = render(eslintVersion, configVersion)
 
-fs.writeFile(readmePath, contents, 'utf8', (err) => {
-  if(err) return console.error('Oh noes', err)
-  console.log('Th th thats all folks')
-})
+fs.writeFileSync(readmePath, contents, 'utf8')
+console.log('Th th thats all folks')
+
+/* if(err) return console.error('Oh noes', err) */
