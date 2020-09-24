@@ -10,17 +10,8 @@ module.exports = {
     es2020: true,
     jest: true,
   },
-  plugins: [
-    "import",
-    "jest",
-    "node",
-    "prettier",
-    "promise",
-    "react",
-    "standard",
-  ],
+  plugins: ["import", "jest", "node", "prettier", "promise", "react"],
   extends: [
-    "standard",
     "eslint:recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
@@ -37,16 +28,6 @@ module.exports = {
     "import/resolver": { node: { extensions: [".js", ".jsx"] } },
   },
   rules: {
-    "eol-last": ["error", "always"],
-    "no-multiple-empty-lines": [
-      "error",
-      {
-        max: 1,
-        maxEOF: 0,
-        maxBOF: 0,
-      },
-    ],
-    "object-curly-spacing": [2, "always"],
     "react/prop-types": 0,
   },
 };
