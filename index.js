@@ -1,22 +1,23 @@
 module.exports = {
   parser: "babel-eslint",
   parserOptions: {
-    "sourceType": "module",
-    "ecmaFeatures": {"jsx": true}
+    sourceType: "module",
+    ecmaFeatures: { jsx: true },
   },
   env: {
-    "browser": true,
-    "node": true,
-    "es2020": true,
-    "jest": true
+    browser: true,
+    node: true,
+    es2020: true,
+    jest: true,
   },
   plugins: [
     "import",
     "jest",
     "node",
+    "prettier",
     "promise",
     "react",
-    "standard"
+    "standard",
   ],
   extends: [
     "standard",
@@ -27,26 +28,25 @@ module.exports = {
     "plugin:jest/recommended",
     "plugin:jest/style",
     "plugin:react/recommended",
-    "plugin:promise/recommended"
+    "plugin:promise/recommended",
+    "plugin:prettier/recommended",
+    "prettier/react",
   ],
   settings: {
-    "react": {"version": "detect"},
-    "import/resolver": {"node": {"extensions": [".js",".jsx"]}}
+    react: { version: "detect" },
+    "import/resolver": { node: { extensions: [".js", ".jsx"] } },
   },
   rules: {
-    "eol-last": [
-     "error",
-     "always"
-    ],
+    "eol-last": ["error", "always"],
     "no-multiple-empty-lines": [
-     "error",
-     {
-      "max": 1,
-      "maxEOF": 0,
-      "maxBOF": 0
-     }
+      "error",
+      {
+        max: 1,
+        maxEOF: 0,
+        maxBOF: 0,
+      },
     ],
     "object-curly-spacing": [2, "always"],
-    "react/prop-types": 0
-  }
-}
+    "react/prop-types": 0,
+  },
+};
