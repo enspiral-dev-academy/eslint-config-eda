@@ -10,12 +10,7 @@
     "eslint-config"
   ],
   "scripts": {
-    "make": "./make-readme && git add ."
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run make"
-    }
+    "pre-commit": "./make-readme && git add ."
   },
   "repository": {
     "type": "git",
