@@ -10,7 +10,7 @@
     "eslint-config"
   ],
   "scripts": {
-    "precommit": "./make-readme"
+    "pre-commit": "./make-readme"
   },
   "repository": {
     "type": "git",
