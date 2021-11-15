@@ -1,3 +1,4 @@
+require("@rushstack/eslint-patch/modern-module-resolution");
 module.exports = {
   parser: "babel-eslint",
   parserOptions: {

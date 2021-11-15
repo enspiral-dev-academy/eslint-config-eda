@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-eda",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Linting configuration for EDA challenges and projects",
   "author": "Ensprial Dev Academy (EDA)",
   "license": "ISC",
@@ -26,6 +26,7 @@
   },
   "main": "index.js",
   "dependencies": {
+    "@rushstack/eslint-patch": "^1.1.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.9.0",
     "eslint-config-standard": "^14.1.1",

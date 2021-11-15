@@ -10,11 +10,11 @@ There are two versions of this package:
 
 Install the exact version (-E) of this package and its peer dependency, [ESLint](http://eslint.org), as devDependencies (-D) based on the version you want to install. You can identify the versions by the end of the following installation commands.
 
-`npm i -DE eslint@7.9.0 eslint-config-eda@0.1.4`
+`npm i -DE eslint@7.9.0 eslint-config-eda@0.1.5`
 
 or
 
-`npm i -DE eslint@7.9.0 eslint-config-eda@0.2.3`
+`npm i -DE eslint@7.9.0 eslint-config-eda@0.2.2`
 
 ## Usage
 
