@@ -2,12 +2,12 @@
 
 const fs = require('fs')
 const path = require('path')
-const { exec } = require('child_process');
+const { exec } = require('child_process')
 
 const packageJson = require('./package.json')
 const render = require('./README.template')
 
-const eslintVersion = packageJson.dependencies.eslint.replace('^', '')
+const eslintVersion = packageJson.peerDependencies.eslint.replace('^', '')
 const configVersion = packageJson.version
 const minor = configVersion.split('.')[1]
 
@@ -16,7 +16,7 @@ const gitTags = exec('git tag', (error, stdout, stderr) => {
   if (stderr) return showError('understading `git tag` command', stderr)
 
   const tags = stdout.split('\n')
-  const otherVersion = tags.find(t => t && t.split('.')[1] !== minor)
+  const otherVersion = tags.find((t) => t && t.split('.')[1] !== minor)
 
   const readmePath = path.join(__dirname, 'README.md')
   const contents = render(eslintVersion, configVersion, otherVersion)

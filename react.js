@@ -2,6 +2,7 @@ module.exports = {
   parser: '@babel/eslint-parser',
   parserOptions: {
     sourceType: 'module',
+    ecmaFeatures: { jsx: true },
   },
   env: {
     browser: true,
@@ -9,7 +10,7 @@ module.exports = {
     es2020: true,
     jest: true,
   },
-  plugins: ['import', 'jest', 'node', 'prettier', 'promise'],
+  plugins: ['import', 'jest', 'node', 'prettier', 'promise', 'react'],
   extends: [
     'eslint:recommended',
     'plugin:import/errors',
@@ -17,11 +18,16 @@ module.exports = {
     'plugin:import/react',
     'plugin:jest/recommended',
     'plugin:jest/style',
+    'plugin:react/recommended',
     'plugin:promise/recommended',
     'plugin:prettier/recommended',
+    'prettier/react',
   ],
   settings: {
-    'import/resolver': { node: { extensions: ['.js'] } },
+    react: { version: 'detect' },
+    'import/resolver': { node: { extensions: ['.js', '.jsx'] } },
   },
-  rules: {},
+  rules: {
+    'react/prop-types': 0,
+  },
 }
