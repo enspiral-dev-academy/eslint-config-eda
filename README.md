@@ -26,17 +26,38 @@ Add `eda` to the `extends` section of your configuration file (you can omit the 
 }
 ```
 
+if your project includes react and JSX syntax, extend the react ruleset instead:
+
+```json
+{
+  "extends": "eda/react"
+}
+```
+
+
 ## Easy fixing in VS Code
 
-If you're using VS Code and want to fix linting errors painlessly, install the ESLint extension and place this in your `settings.json` file.
+If you're using VS Code and want to fix linting and formatting errors painlessly install:
+
+- the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- the [Prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+and add these lines to your `settings.json`
 
 ```json
 "editor.codeActionsOnSave": {
   "source.fixAll.eslint": true
+},
+
+"editor.defaultFormatter": "esbenp.prettier-vscode",
+"[javascript]": {
+   "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
 ```
 
-Now everytime you explicitly save the file (autosaving doesn't count), ESLint will fix as many errors as it can. Tip: if you have syntax errors in the file, you'll need to fix them before your linting errors can be fixed for you.
+Now everytime you explicitly save the file (autosaving doesn't count), ESLint will fix as many errors as it can.
+
+Tip: if you have syntax errors in the file, you'll need to fix them before your linting errors can be fixed for you.
 
 ## Finding all errors in your project
 
