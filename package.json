@@ -1,10 +1,14 @@
 {
   "name": "eslint-config-eda",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "Linting configuration for EDA challenges and projects",
   "author": "Enspiral Dev Academy (EDA)",
   "license": "ISC",
-  "keywords": ["eslint", "eslintconfig", "eslint-config"],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config"
+  ],
   "scripts": {
     "make": "./make-readme && git add ."
   },
