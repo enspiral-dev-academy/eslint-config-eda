@@ -1,33 +1,20 @@
+const defaults = require('./index')
 module.exports = {
-  parser: '@babel/eslint-parser',
+  parser: defaults.parser,
   parserOptions: {
-    sourceType: 'module',
+    ...defaults.parserOptions,
     ecmaFeatures: { jsx: true },
   },
-  env: {
-    browser: true,
-    node: true,
-    es2020: true,
-    jest: true,
-  },
-  plugins: ['import', 'jest', 'node', 'prettier', 'promise', 'react'],
-  extends: [
-    'eslint:recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:import/react',
-    'plugin:jest/recommended',
-    'plugin:jest/style',
-    'plugin:react/recommended',
-    'plugin:promise/recommended',
-    'plugin:prettier/recommended',
-    'prettier/react',
-  ],
+  env: defaults.env,
+  plugins: [...defaults.plugins, 'react'],
+  extends: [...defaults.extends, 'prettier/react'],
   settings: {
+    ...defaults.settings,
     react: { version: 'detect' },
     'import/resolver': { node: { extensions: ['.js', '.jsx'] } },
   },
   rules: {
+    ...defaults.rules,
     'react/prop-types': 0,
   },
 }
