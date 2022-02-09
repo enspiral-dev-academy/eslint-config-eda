@@ -7,7 +7,7 @@ module.exports = {
   },
   env: defaults.env,
   plugins: [...defaults.plugins, 'react'],
-  extends: [...defaults.extends, 'prettier/react'],
+  extends: [...defaults.extends, 'react/recommended', 'prettier/react'],
   settings: {
     ...defaults.settings,
     react: { version: 'detect' },
