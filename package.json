@@ -4,11 +4,7 @@
   "description": "Linting configuration for EDA challenges and projects",
   "author": "Enspiral Dev Academy (EDA)",
   "license": "ISC",
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "eslint-config"
-  ],
+  "keywords": ["eslint", "eslintconfig", "eslint-config"],
   "scripts": {
     "make": "./make-readme && git add ."
   },
@@ -26,17 +22,20 @@
   },
   "main": "index.js",
   "peerDependencies": {
-    "@babel/eslint-parser": "^7.17.0",
     "eslint": "^8.8.0",
-    "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jest": "^26.0.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.28.0",
-    "prettier": "^2.5.1"
+    "eslint-plugin-react": "^7.28.0"
   },
+
+  "dependencies": {
+    "@babel/eslint-parser": "^7.17.0",
+    "eslint-config-prettier": "^6.15.0"
+  },
+
   "devDependencies": {
     "husky": "^4.3.0",
     "prettier": "^2.5.1"
