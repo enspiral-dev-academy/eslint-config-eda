@@ -4,19 +4,8 @@
   "description": "Linting configuration for EDA challenges and projects",
   "author": "Enspiral Dev Academy (EDA)",
   "license": "ISC",
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "eslint-config"
-  ],
-  "scripts": {
-    "make": "./make-readme && git add ."
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run make"
-    }
-  },
+  "keywords": ["eslint", "eslintconfig", "eslint-config"],
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/enspiral-dev-academy/eslint-config-eda.git"
@@ -39,7 +28,6 @@
     "eslint-config-prettier": "^6.15.0"
   },
   "devDependencies": {
-    "husky": "^4.3.0",
     "prettier": "^2.5.1"
   }
 }
