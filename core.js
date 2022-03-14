@@ -22,5 +22,7 @@ module.exports = {
   settings: {
     'import/resolver': { node: { extensions: ['.js'] } },
   },
-  rules: {},
+  rules: {
+    'promise/always-return': 0,
+  },
 }
