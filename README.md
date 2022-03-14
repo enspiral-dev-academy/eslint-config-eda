@@ -70,9 +70,12 @@ Tip: if you have syntax errors in the file, you'll need to fix them before your 
 
 ## Finding all errors in your project
 
-1. Add `"lint": "eslint client server"` to the `scripts` section of your `package.json` file, where `client` and `server` are folder names (adjust accordingly).
-2. Add a `.eslintignore` file to the root of your project with these contents: `bundle.js` (and any other files/folders you want ESLint to ignore)
+> These instructions assume that your source files are in folders in your project root called "server" and "client". Adjust accordingly
+
+1. Add `"lint": "eslint client server"` to the `scripts` section of your `package.json` file
+2. Add `"format": "prettier -w client server"` to the `scripts` section of your `package.json` file
+3. Add a `.eslintignore` file to the root of your project with these contents: `bundle.js` (and any other files/folders you want ESLint to ignore)
 
 Now you simply run `npm run lint` to see all of the linting errors in your project.
 
-Pro tip: Run `npm run lint -- --fix` to instruct ESLint to fix as many of the errors as it can.
+Pro tip: Run `npm run lint -- --fix` to instruct ESLint to fix as many of the errors as it can, you can also run `npm run format` to correct the formatting of your source files.

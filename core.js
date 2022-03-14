@@ -10,14 +10,14 @@ module.exports = {
     es2020: true,
     jest: true,
   },
-  plugins: ['import', 'node', 'prettier', 'promise', 'jest'],
+  plugins: ['import', 'node', 'promise', 'jest'],
   extends: [
     'eslint:recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/react',
     'plugin:promise/recommended',
-    'plugin:prettier/recommended',
+    'prettier',
   ],
   settings: {
     'import/resolver': { node: { extensions: ['.js'] } },
