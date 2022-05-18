@@ -6,8 +6,8 @@ module.exports = {
     ecmaFeatures: { jsx: true },
   },
   env: defaults.env,
-  plugins: [...defaults.plugins, 'react'],
-  extends: [...defaults.extends, 'plugin:react/recommended', 'prettier/react'],
+  plugins: [...defaults.plugins, 'react', 'jsx-a11y'],
+  extends: [...defaults.extends, 'plugin:react/recommended', 'prettier/react', 'plugin:jsx-a11y/strict'],
   settings: {
     ...defaults.settings,
     react: { version: 'detect' },
