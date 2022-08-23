@@ -1,14 +1,14 @@
 module.exports = {
-  parser: '@babel/eslint-parser',
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     sourceType: 'module',
-    requireConfigFile: false,
+    requireConfigFile: false
   },
   env: {
     browser: true,
     node: true,
     es2020: true,
-    jest: true,
+    jest: true
   },
   plugins: ['import', 'node', 'promise', 'jest'],
   extends: [
@@ -17,12 +17,12 @@ module.exports = {
     'plugin:import/warnings',
     'plugin:import/react',
     'plugin:promise/recommended',
-    'prettier',
+    'prettier'
   ],
   settings: {
-    'import/resolver': { node: { extensions: ['.js'] } },
+    'import/resolver': { node: { extensions: ['.js'] } }
   },
   rules: {
-    'promise/always-return': 0,
-  },
+    'promise/always-return': 0
+  }
 }
