@@ -20,7 +20,7 @@ module.exports = {
     'prettier',
   ],
   settings: {
-    'import/resolver': { node: { extensions: ['.js'] } },
+    'import/resolver': { node: { extensions: ['.js', '.ts'] } },
   },
   rules: {
     'promise/always-return': 0,

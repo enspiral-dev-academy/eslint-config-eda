@@ -12,13 +12,14 @@ module.exports = {
   extends: [
     ...defaults.extends,
     'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
     'prettier/react',
     'plugin:jsx-a11y/strict',
   ],
   settings: {
     ...defaults.settings,
     react: { version: 'detect' },
-    'import/resolver': { node: { extensions: ['.js', '.jsx'] } },
+    'import/resolver': { node: { extensions: ['.js', '.jsx', '.ts', '.tsx'] } },
   },
   rules: {
     ...defaults.rules,
