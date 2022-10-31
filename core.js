@@ -13,6 +13,8 @@ module.exports = {
   plugins: ['import', 'node', 'promise', 'jest'],
   extends: [
     'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/react',
