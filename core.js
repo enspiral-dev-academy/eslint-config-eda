@@ -26,5 +26,7 @@ module.exports = {
   },
   rules: {
     'promise/always-return': 0,
+    '@typescript-eslint/no-var-requires': 0,
+    '@typescript-eslint/no-empty-function': 0,
   },
 }
