@@ -11,6 +11,7 @@ module.exports = {
   plugins: [...defaults.plugins, 'react', 'jsx-a11y'],
   extends: [
     ...defaults.extends,
+    'plugin:import/react',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
