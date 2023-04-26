@@ -8,9 +8,8 @@ module.exports = {
     browser: true,
     node: true,
     es2020: true,
-    jest: true,
   },
-  plugins: ['import', 'node', 'promise', 'jest'],
+  plugins: ['import', 'node', 'promise'],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
