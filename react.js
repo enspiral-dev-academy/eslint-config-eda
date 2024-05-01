@@ -15,8 +15,8 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
-    'prettier/react',
     'plugin:jsx-a11y/strict',
+    'prettier',
   ],
   settings: {
     ...defaults.settings,
