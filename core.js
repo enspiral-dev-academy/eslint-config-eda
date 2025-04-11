@@ -6,6 +6,12 @@ import pluginPromise from "eslint-plugin-promise";
 import eslintConfigPrettier from "eslint-config-prettier";
 import globals from "globals";
 
+// Filter out problematic globals with whitespace
+const filteredBrowserGlobals = Object.fromEntries(
+  Object.entries(globals.browser).filter(([key]) => key.trim() === key)
+);
+
+
 export default [
   // Base recommended rules
   eslintJs.configs.recommended,
@@ -30,7 +36,7 @@ export default [
         ecmaVersion: 2020, // Replaces env.es2020
       },
       globals: {
-        ...globals.browser,
+        ...filteredBrowserGlobals, // Use the filtered object
         ...globals.node, // Replaces env.node and env.browser
         ...globals.jest, // Replaces env.jest
       },
