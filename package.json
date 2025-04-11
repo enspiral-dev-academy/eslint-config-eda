@@ -1,6 +1,6 @@
 {
   "name": "@devacademy/eslint-config",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Linting configuration for EDA challenges and projects",
   "author": "Enspiral Dev Academy (EDA)",
   "license": "ISC",
