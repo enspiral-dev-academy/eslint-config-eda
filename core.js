@@ -38,7 +38,6 @@ export default [
       globals: {
         ...filteredBrowserGlobals, // Use the filtered object
         ...globals.node, // Replaces env.node and env.browser
-        ...globals.jest, // Replaces env.jest
       },
     },
   },
